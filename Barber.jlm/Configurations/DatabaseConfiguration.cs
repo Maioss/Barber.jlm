@@ -10,7 +10,6 @@ namespace Barber.jlm.Configurations
             services.AddDbContext<PostgreSQLContext>(options =>
                 options.UseNpgsql(Environment.GetEnvironmentVariable("CONNECTION_STRING")));
 
-
             return services;
         }
 
